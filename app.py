@@ -152,7 +152,7 @@ def parse_filename_description(filename: str) -> str:
 class RealTimeMetricsProcessor:
     """Processes real-time 5G network log files and monitors for updates."""
     
-    def __init__(self, perl_script_path: str = "script.pl"):
+    def __init__(self, perl_script_path: str = "scripts/script.pl"):
         self.perl_script_path = perl_script_path
         self.last_position = 0
         self.monitoring = False
@@ -249,7 +249,7 @@ class RealTimeMetricsProcessor:
 class NetworkMetricsProcessor:
     """Processes 5G network log files and extracts metrics using the Perl script."""
     
-    def __init__(self, perl_script_path: str = "script.pl"):
+    def __init__(self, perl_script_path: str = "scripts/script.pl"):
         self.perl_script_path = perl_script_path
         
     def process_file(self, file_content: str, filename: str) -> Optional[pd.DataFrame]:
