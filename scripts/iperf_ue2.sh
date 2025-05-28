@@ -10,7 +10,7 @@ test_number=$1
 
 echo "Running test scenario $test_number..."
 
-IP_UE2=10.0.0.3
+IP_UE2=$(ip -4 addr show $UE_IF 2>/dev/null | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 case $test_number in
   1)
     echo "[UE2] ping 192.168.70.135 -I $IP_UE2"

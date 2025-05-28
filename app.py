@@ -381,7 +381,7 @@ class MetricsVisualizer:
                     y=group['PdcpSduVolumeUL'],
                     mode='lines+markers',
                     name=f'{ue_id} - UL',
-                    line=dict(width=2, dash='dot'),
+                    line=dict(width=2),
                     marker=dict(size=6)
                 )
             )
@@ -446,7 +446,7 @@ class MetricsVisualizer:
                     y=group['PrbTotUl'],
                     mode='lines+markers',
                     name=f'{ue_id} - PRB UL',
-                    line=dict(width=2, dash='dot'),
+                    line=dict(width=2),
                     marker=dict(size=6)
                 )
             )

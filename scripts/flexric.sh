@@ -1,0 +1,1 @@
+sudo ../../flexric/build/examples/ric/nearRT-RIC

@@ -1,0 +1,1 @@
+sudo ../../oai/cmake_targets/ran_build/build/nr-uesoftmodem -r 217 --numerology 1 --band 78 -C 3549990000 --ssb 1041 --rfsim --sa --uicc0.imsi 001010000000001 --rfsimulator.serveraddr 127.0.0.1
