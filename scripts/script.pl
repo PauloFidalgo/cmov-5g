@@ -1,4 +1,3 @@
-
 #!/usr/bin/env perl
 use strict;
 use warnings;
@@ -17,8 +16,7 @@ while (<>) {
     chomp;
 
     if (/^\s*(\d+)\s+KPM ind_msg latency\s*=\s*(\d+)/) {
-        # Print previous entry if exists
-        print join(",", map { $entry{$_} // "" } @headers), "\n" if %entry;
+        print_entry(\%entry, \@headers) if is_complete(\%entry, \@headers);
         %entry = ();  # Reset
         $entry{id} = $1;
         $entry{latency} = $2;
@@ -52,5 +50,17 @@ while (<>) {
     }
 }
 
-# Print last entry
-print join(",", map { $entry{$_} // "" } @headers), "\n" if %entry;
+print_entry(\%entry, \@headers) if is_complete(\%entry, \@headers);
+
+sub is_complete {
+    my ($entry, $headers) = @_;
+    for my $key (@$headers) {
+        return 0 unless exists $entry->{$key};
+    }
+    return 1;
+}
+
+sub print_entry {
+    my ($entry, $headers) = @_;
+    print join(",", map { $entry->{$_} } @$headers), "\n";
+}
