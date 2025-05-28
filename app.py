@@ -464,7 +464,7 @@ class MetricsVisualizer:
         fig.add_trace(
             go.Scatter(
                 x=df['id'],
-                y=df['latency'],
+                y=df['latency_delta'],
                 mode='lines+markers',
                 name='KMP Indication Latency',
                 line=dict(color='darkred', width=2),
@@ -550,6 +550,7 @@ def real_time_tab():
             if new_content:
                 # Process new data
                 updated_df = rt_processor.process_incremental_data(new_content, st.session_state.rt_data)
+                updated_df['latency_delta'] = updated_df['latency'].diff()
                 if updated_df is not None:
                     st.session_state.rt_data = updated_df
                     st.session_state.rt_last_update = time.time()
@@ -599,8 +600,8 @@ def display_real_time_metrics(df: pd.DataFrame, visualizer):
         delta_ul = latest_ul - avg_ul
         st.metric("Current UL Throughput", f"{latest_ul:.2f} kbps", delta=f"{delta_ul:.2f}")
     with col4:
-        latest_latency = df['latency'].iloc[-1] if not df.empty else 0
-        avg_latency = df['latency'].mean() if not df.empty else 0
+        latest_latency = df['latency_delta'].iloc[-1] if not df.empty else 0
+        avg_latency = df['latency_delta'].mean() if not df.empty else 0
         delta_latency = latest_latency - avg_latency
         st.metric("Current Latency", f"{latest_latency:.0f} μs", delta=f"{delta_latency:.0f}")
     
