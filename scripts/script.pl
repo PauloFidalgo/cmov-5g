@@ -11,46 +11,59 @@ my @headers = qw(
 
 print join(",", @headers), "\n";
 
-my %entry;
+my @entries;
+my %current_entry;
+my $current_id;
+my $current_latency;
+
 while (<>) {
     chomp;
 
     if (/^\s*(\d+)\s+KPM ind_msg latency\s*=\s*(\d+)/) {
-        print_entry(\%entry, \@headers) if is_complete(\%entry, \@headers);
-        %entry = ();  # Reset
-        $entry{id} = $1;
-        $entry{latency} = $2;
+        for my $entry (@entries) {
+            print_entry($entry, \@headers) if is_complete($entry, \@headers);
+        }
+        @entries = ();
+        $current_id = $1;
+        $current_latency = $2;
+        %current_entry = ();
     }
     elsif (/amf_ue_ngap_id\s*=\s*(\d+)/) {
-        $entry{ue_id} = $1;
+        $current_entry{ue_id} = $1;
+        $current_entry{id} = $current_id;
+        $current_entry{latency} = $current_latency;
     }
     elsif (/ran_ue_id\s*=\s*(\d+)/) {
-        $entry{ran_ue_id} = $1;
+        $current_entry{ran_ue_id} = $1;
     }
     elsif (/PdcpSduVolumeDL\s*=\s*(\d+)/) {
-        $entry{PdcpSduVolumeDL} = $1;
+        $current_entry{PdcpSduVolumeDL} = $1;
     }
     elsif (/PdcpSduVolumeUL\s*=\s*(\d+)/) {
-        $entry{PdcpSduVolumeUL} = $1;
+        $current_entry{PdcpSduVolumeUL} = $1;
     }
     elsif (/RlcSduDelayDl\s*=\s*([\d.]+)/) {
-        $entry{RlcSduDelayDl} = $1;
+        $current_entry{RlcSduDelayDl} = $1;
     }
     elsif (/UEThpDl\s*=\s*([\d.]+)/) {
-        $entry{UEThpDl} = $1;
+        $current_entry{UEThpDl} = $1;
     }
     elsif (/UEThpUl\s*=\s*([\d.]+)/) {
-        $entry{UEThpUl} = $1;
+        $current_entry{UEThpUl} = $1;
     }
     elsif (/PrbTotDl\s*=\s*(\d+)/) {
-        $entry{PrbTotDl} = $1;
+        $current_entry{PrbTotDl} = $1;
     }
     elsif (/PrbTotUl\s*=\s*(\d+)/) {
-        $entry{PrbTotUl} = $1;
+        $current_entry{PrbTotUl} = $1;
+        push @entries, { %current_entry };
+        %current_entry = ();
     }
 }
 
-print_entry(\%entry, \@headers) if is_complete(\%entry, \@headers);
+for my $entry (@entries) {
+    print_entry($entry, \@headers) if is_complete($entry, \@headers);
+}
 
 sub is_complete {
     my ($entry, $headers) = @_;
