@@ -40,7 +40,7 @@ usage() {
   exit 1
 }
 
-while getopts ":l:t:d:b:" opt; do
+while getopts ":2:l:t:d:b:" opt; do
   case $opt in
     l) link=$OPTARG ;;
     t) traffic=$OPTARG ;;
@@ -100,7 +100,7 @@ echo " Bandwidth: $bandwidth"
 
 case "$traffic" in
   "rtt")
-    if [[ "$link" == "ul" ]]; then
+    if [[ "$link" == "dl" ]]; then
       echo "[UE] ping $CORE_IP -I $UE1_IP"
       ping $CORE_IP -I $UE1_IP > /dev/null &
       if [[ -n "$UE2_IP" ]]; then
@@ -134,7 +134,6 @@ case "$traffic" in
       iperf -u $run_time_param -i 1 -B $UE1_IP -b 10M -c $CORE_IP > /dev/null &
       if [[ -n "$UE2_IP" ]]; then
         echo "[UE2] iperf -u $run_time_param -i 1 -B $UE2_IP -b 10M -c $CORE_IP &"
-        iperf -u $run_time_param -i 1 -B $UE2_IP -b 10M -c $CORE_IP > /dev/null &
       fi
     fi
     ;;
@@ -157,7 +156,6 @@ case "$traffic" in
       iperf $run_time_param -i 1 -B $UE1_IP -c $CORE_IP > /dev/null &
       if [[ -n "$UE2_IP" ]]; then
         echo "[UE2] iperf $run_time_param -i 1 -B $UE2_IP -c $CORE_IP"
-        iperf $run_time_param -i 1 -B $UE2_IP -c $CORE_IP > /dev/null &
       fi
     fi
     ;;
@@ -168,15 +166,23 @@ case "$traffic" in
     ;;
 esac
 
+prefix="ue"
+[[ -n "$UE2_IP" ]] && prefix="ue2"
+
 if [[ -n "$duration" ]]; then
-  filename="ue_${link}_${traffic}_b${bandwidth}_${duration}.txt"
-  echo "Logging xApp output to $filename"
+  filename="${prefix}_${link}_${traffic}_b${bandwidth}_${duration}.txt"
+else
+  filename="${prefix}_${link}_${traffic}_b${bandwidth}.txt"
+fi
+
+echo "Logging xApp output to $filename"
+
+if [[ -n "$duration" ]]; then
   (show_progress $duration) &
   ../../flexric/build/examples/xApp/c/monitor/xapp_kpm_moni $duration > "$filename"
 else
-  filename="ue_${link}_${traffic}_b${bandwidth}.txt"
-  echo "Logging xApp output to $filename"
   ../../flexric/build/examples/xApp/c/monitor/xapp_kpm_moni > "$filename"
 fi
 
+chown $SUDO_USER:$SUDO_USER "$filename"
 echo "Output written to $filename"

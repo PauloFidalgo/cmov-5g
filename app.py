@@ -88,67 +88,7 @@ def parse_filename_description(filename: str) -> str:
     except Exception:
         # Fallback to filename if parsing fails
         return f"File: {filename}"
-
-def parse_filename_description(filename: str) -> str:
-    """
-    Parse filename and generate a human-readable description.
     
-    Expected format: ue{number}_{direction}_{traffic_type}_b{bandwidth}
-    Examples:
-    - ue_dl_rtt_b20 -> 1 UE, Downlink, Ping (RTT), 20MHz
-    - ue2_up_tcp_b30 -> 2 UE, Uplink, TCP, 30MHz
-    - up2_up_udp_b80 -> 2 UE, Uplink, UDP, 80MHz
-    
-    Args:
-        filename: The filename to parse
-        
-    Returns:
-        Human-readable description string
-    """
-    # Remove file extension
-    name = Path(filename).stem
-    
-    try:
-        # Parse the filename pattern
-        pattern = r'u[pe](\d*)_([du][pl])_([a-z]+)_b(\d+)'
-        match = re.match(pattern, name.lower())
-        
-        if not match:
-            return f"File: {filename}"
-        
-        ue_count_str, direction, traffic_type, bandwidth = match.groups()
-        
-        # Determine UE count (default to 1 if not specified)
-        ue_count = int(ue_count_str) if ue_count_str else 1
-        
-        # Parse direction
-        direction_map = {
-            'dl': 'Downlink (Server → UE)',
-            'up': 'Uplink (UE → Server)',
-            'ul': 'Uplink (UE → Server)'
-        }
-        direction_desc = direction_map.get(direction, direction.upper())
-        
-        # Parse traffic type
-        traffic_map = {
-            'rtt': 'Ping (RTT)',
-            'tcp': 'TCP',
-            'udp': 'UDP'
-        }
-        traffic_desc = traffic_map.get(traffic_type, traffic_type.upper())
-        
-        # Format bandwidth
-        bandwidth_desc = f"{bandwidth}MHz"
-        
-        # Create description
-        ue_desc = f"{ue_count} UE{'s' if ue_count > 1 else ''}"
-        
-        return f"📊 {ue_desc} | {direction_desc} | {traffic_desc} | {bandwidth_desc}"
-        
-    except Exception:
-        # Fallback to filename if parsing fails
-        return f"File: {filename}"
-
 class RealTimeMetricsProcessor:
     """Processes real-time 5G network log files and monitors for updates."""
     

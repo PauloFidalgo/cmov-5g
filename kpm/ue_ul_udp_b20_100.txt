@@ -1,0 +1,1133 @@
+[UTIL]: Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+[UTIL]: Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[xAapp]: Initializing ... 
+[xApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[NEAR-RIC]: Loading SM ID = 3 with def = ORAN-E2SM-RC 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 2 with def = ORAN-E2SM-KPM 
+[xApp]: DB filename = /tmp/xapp_db_1748443785435031 
+ [xApp]: E42 SETUP-REQUEST tx
+[xApp]: E42 SETUP-RESPONSE rx 
+[xApp]: xApp ID = 7 
+[xApp]: Registered E2 Nodes = 1 
+Connected E2 nodes = 1
+[xApp]: E42 RIC SUBSCRIPTION REQUEST tx RAN_FUNC_ID 2 RIC_REQ_ID 1 
+[xApp]: SUBSCRIPTION RESPONSE rx
+[xApp]: Successfully subscribed to RAN_FUNC_ID 2 
+
+      1 KPM ind_msg latency = 1748442040002408 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 27 [kb]
+DRB.PdcpSduVolumeUL = 32129 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 35.51 [kbps]
+DRB.UEThpUl = 32340.03 [kbps]
+RRU.PrbTotDl = 2183 [PRBs]
+RRU.PrbTotUl = 135535 [PRBs]
+
+      2 KPM ind_msg latency = 1748442041002338 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.18 [kbps]
+DRB.UEThpUl = 10758.98 [kbps]
+RRU.PrbTotDl = 470 [PRBs]
+RRU.PrbTotUl = 42448 [PRBs]
+
+      3 KPM ind_msg latency = 1748442042002408 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.66 [kbps]
+DRB.UEThpUl = 10762.20 [kbps]
+RRU.PrbTotDl = 575 [PRBs]
+RRU.PrbTotUl = 38149 [PRBs]
+
+      4 KPM ind_msg latency = 1748442043002965 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10641 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.78 [kbps]
+DRB.UEThpUl = 10701.76 [kbps]
+RRU.PrbTotDl = 600 [PRBs]
+RRU.PrbTotUl = 36438 [PRBs]
+
+      5 KPM ind_msg latency = 1748442044002480 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10749 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10829.26 [kbps]
+RRU.PrbTotDl = 530 [PRBs]
+RRU.PrbTotUl = 38367 [PRBs]
+
+      6 KPM ind_msg latency = 1748442045002868 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10629 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.86 [kbps]
+DRB.UEThpUl = 10682.99 [kbps]
+RRU.PrbTotDl = 615 [PRBs]
+RRU.PrbTotUl = 36117 [PRBs]
+
+      7 KPM ind_msg latency = 1748442046002470 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10737 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10809.64 [kbps]
+RRU.PrbTotDl = 540 [PRBs]
+RRU.PrbTotUl = 37956 [PRBs]
+
+      8 KPM ind_msg latency = 1748442047002400 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.33 [kbps]
+DRB.UEThpUl = 10766.69 [kbps]
+RRU.PrbTotDl = 505 [PRBs]
+RRU.PrbTotUl = 42710 [PRBs]
+
+      9 KPM ind_msg latency = 1748442048002650 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.47 [kbps]
+DRB.UEThpUl = 10731.14 [kbps]
+RRU.PrbTotDl = 535 [PRBs]
+RRU.PrbTotUl = 38055 [PRBs]
+
+     10 KPM ind_msg latency = 1748442049002376 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10750.70 [kbps]
+RRU.PrbTotDl = 525 [PRBs]
+RRU.PrbTotUl = 40881 [PRBs]
+
+     11 KPM ind_msg latency = 1748442050002417 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.21 [kbps]
+DRB.UEThpUl = 10732.68 [kbps]
+RRU.PrbTotDl = 480 [PRBs]
+RRU.PrbTotUl = 42006 [PRBs]
+
+     12 KPM ind_msg latency = 1748442051002413 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10678 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10744.70 [kbps]
+RRU.PrbTotDl = 525 [PRBs]
+RRU.PrbTotUl = 35694 [PRBs]
+
+     13 KPM ind_msg latency = 1748442052002438 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.59 [kbps]
+DRB.UEThpUl = 10792.04 [kbps]
+RRU.PrbTotDl = 555 [PRBs]
+RRU.PrbTotUl = 36672 [PRBs]
+
+     14 KPM ind_msg latency = 1748442053002253 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.99 [kbps]
+DRB.UEThpUl = 10735.04 [kbps]
+RRU.PrbTotDl = 430 [PRBs]
+RRU.PrbTotUl = 40252 [PRBs]
+
+     15 KPM ind_msg latency = 1748442054002304 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.90 [kbps]
+DRB.UEThpUl = 10769.38 [kbps]
+RRU.PrbTotDl = 625 [PRBs]
+RRU.PrbTotUl = 37377 [PRBs]
+
+     16 KPM ind_msg latency = 1748442055002480 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.42 [kbps]
+DRB.UEThpUl = 10731.84 [kbps]
+RRU.PrbTotDl = 520 [PRBs]
+RRU.PrbTotUl = 38316 [PRBs]
+
+     17 KPM ind_msg latency = 1748442056002851 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.68 [kbps]
+DRB.UEThpUl = 10783.25 [kbps]
+RRU.PrbTotDl = 365 [PRBs]
+RRU.PrbTotUl = 39183 [PRBs]
+
+     18 KPM ind_msg latency = 1748442057002257 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.90 [kbps]
+DRB.UEThpUl = 10734.16 [kbps]
+RRU.PrbTotDl = 410 [PRBs]
+RRU.PrbTotUl = 39223 [PRBs]
+
+     19 KPM ind_msg latency = 1748442058002300 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.69 [kbps]
+DRB.UEThpUl = 10732.65 [kbps]
+RRU.PrbTotDl = 580 [PRBs]
+RRU.PrbTotUl = 38200 [PRBs]
+
+     20 KPM ind_msg latency = 1748442059002311 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.33 [kbps]
+DRB.UEThpUl = 10781.60 [kbps]
+RRU.PrbTotDl = 500 [PRBs]
+RRU.PrbTotUl = 38728 [PRBs]
+
+     21 KPM ind_msg latency = 1748442060002384 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.52 [kbps]
+DRB.UEThpUl = 10744.17 [kbps]
+RRU.PrbTotDl = 540 [PRBs]
+RRU.PrbTotUl = 38866 [PRBs]
+
+     22 KPM ind_msg latency = 1748442061002516 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.33 [kbps]
+DRB.UEThpUl = 10758.60 [kbps]
+RRU.PrbTotDl = 505 [PRBs]
+RRU.PrbTotUl = 39399 [PRBs]
+
+     23 KPM ind_msg latency = 1748442062002278 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.22 [kbps]
+DRB.UEThpUl = 10744.56 [kbps]
+RRU.PrbTotDl = 465 [PRBs]
+RRU.PrbTotUl = 39956 [PRBs]
+
+     24 KPM ind_msg latency = 1748442063002179 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.23 [kbps]
+DRB.UEThpUl = 10783.32 [kbps]
+RRU.PrbTotDl = 485 [PRBs]
+RRU.PrbTotUl = 42385 [PRBs]
+
+     25 KPM ind_msg latency = 1748442064002271 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.11 [kbps]
+DRB.UEThpUl = 10724.62 [kbps]
+RRU.PrbTotDl = 460 [PRBs]
+RRU.PrbTotUl = 43456 [PRBs]
+
+     26 KPM ind_msg latency = 1748442065002375 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 3.05 [kbps]
+DRB.UEThpUl = 10802.70 [kbps]
+RRU.PrbTotDl = 655 [PRBs]
+RRU.PrbTotUl = 36683 [PRBs]
+
+     27 KPM ind_msg latency = 1748442066002434 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.26 [kbps]
+DRB.UEThpUl = 10709.86 [kbps]
+RRU.PrbTotDl = 490 [PRBs]
+RRU.PrbTotUl = 38941 [PRBs]
+
+     28 KPM ind_msg latency = 1748442067002453 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.40 [kbps]
+DRB.UEThpUl = 10757.54 [kbps]
+RRU.PrbTotDl = 520 [PRBs]
+RRU.PrbTotUl = 38570 [PRBs]
+
+     29 KPM ind_msg latency = 1748442068002310 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.35 [kbps]
+DRB.UEThpUl = 10768.38 [kbps]
+RRU.PrbTotDl = 505 [PRBs]
+RRU.PrbTotUl = 40239 [PRBs]
+
+     30 KPM ind_msg latency = 1748442069002641 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10752.97 [kbps]
+RRU.PrbTotDl = 530 [PRBs]
+RRU.PrbTotUl = 41817 [PRBs]
+
+     31 KPM ind_msg latency = 1748442070002637 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.30 [kbps]
+DRB.UEThpUl = 10754.74 [kbps]
+RRU.PrbTotDl = 490 [PRBs]
+RRU.PrbTotUl = 41829 [PRBs]
+
+     32 KPM ind_msg latency = 1748442071002306 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.42 [kbps]
+DRB.UEThpUl = 10753.71 [kbps]
+RRU.PrbTotDl = 525 [PRBs]
+RRU.PrbTotUl = 41330 [PRBs]
+
+     33 KPM ind_msg latency = 1748442072003173 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.59 [kbps]
+DRB.UEThpUl = 10750.51 [kbps]
+RRU.PrbTotDl = 560 [PRBs]
+RRU.PrbTotUl = 40667 [PRBs]
+
+     34 KPM ind_msg latency = 1748442073002432 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.78 [kbps]
+DRB.UEThpUl = 10756.79 [kbps]
+RRU.PrbTotDl = 600 [PRBs]
+RRU.PrbTotUl = 37407 [PRBs]
+
+     35 KPM ind_msg latency = 1748442074002188 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.59 [kbps]
+DRB.UEThpUl = 10733.02 [kbps]
+RRU.PrbTotDl = 560 [PRBs]
+RRU.PrbTotUl = 39421 [PRBs]
+
+     36 KPM ind_msg latency = 1748442075002284 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.40 [kbps]
+DRB.UEThpUl = 10745.64 [kbps]
+RRU.PrbTotDl = 520 [PRBs]
+RRU.PrbTotUl = 39102 [PRBs]
+
+     37 KPM ind_msg latency = 1748442076002347 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.81 [kbps]
+DRB.UEThpUl = 10793.88 [kbps]
+RRU.PrbTotDl = 605 [PRBs]
+RRU.PrbTotUl = 36322 [PRBs]
+
+     38 KPM ind_msg latency = 1748442077002440 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.30 [kbps]
+DRB.UEThpUl = 10730.62 [kbps]
+RRU.PrbTotDl = 500 [PRBs]
+RRU.PrbTotUl = 39967 [PRBs]
+
+     39 KPM ind_msg latency = 1748442078002355 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.64 [kbps]
+DRB.UEThpUl = 10746.72 [kbps]
+RRU.PrbTotDl = 565 [PRBs]
+RRU.PrbTotUl = 38395 [PRBs]
+
+     40 KPM ind_msg latency = 1748442079002575 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.69 [kbps]
+DRB.UEThpUl = 10749.69 [kbps]
+RRU.PrbTotDl = 580 [PRBs]
+RRU.PrbTotUl = 37872 [PRBs]
+
+     41 KPM ind_msg latency = 1748442080002298 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.76 [kbps]
+DRB.UEThpUl = 10771.42 [kbps]
+RRU.PrbTotDl = 595 [PRBs]
+RRU.PrbTotUl = 35096 [PRBs]
+
+     42 KPM ind_msg latency = 1748442081002684 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.09 [kbps]
+DRB.UEThpUl = 10713.67 [kbps]
+RRU.PrbTotDl = 455 [PRBs]
+RRU.PrbTotUl = 41782 [PRBs]
+
+     43 KPM ind_msg latency = 1748442082002272 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10714 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.57 [kbps]
+DRB.UEThpUl = 10781.52 [kbps]
+RRU.PrbTotDl = 555 [PRBs]
+RRU.PrbTotUl = 38793 [PRBs]
+
+     44 KPM ind_msg latency = 1748442083002540 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.35 [kbps]
+DRB.UEThpUl = 10759.19 [kbps]
+RRU.PrbTotDl = 505 [PRBs]
+RRU.PrbTotUl = 40789 [PRBs]
+
+     45 KPM ind_msg latency = 1748442084002490 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.21 [kbps]
+DRB.UEThpUl = 10772.00 [kbps]
+RRU.PrbTotDl = 480 [PRBs]
+RRU.PrbTotUl = 40495 [PRBs]
+
+     46 KPM ind_msg latency = 1748442085002475 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.62 [kbps]
+DRB.UEThpUl = 10755.99 [kbps]
+RRU.PrbTotDl = 565 [PRBs]
+RRU.PrbTotUl = 37951 [PRBs]
+
+     47 KPM ind_msg latency = 1748442086002676 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.18 [kbps]
+DRB.UEThpUl = 10747.22 [kbps]
+RRU.PrbTotDl = 475 [PRBs]
+RRU.PrbTotUl = 38392 [PRBs]
+
+     48 KPM ind_msg latency = 1748442087002918 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10629 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.69 [kbps]
+DRB.UEThpUl = 10694.99 [kbps]
+RRU.PrbTotDl = 575 [PRBs]
+RRU.PrbTotUl = 37691 [PRBs]
+
+     49 KPM ind_msg latency = 1748442088002276 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.21 [kbps]
+DRB.UEThpUl = 10780.74 [kbps]
+RRU.PrbTotDl = 475 [PRBs]
+RRU.PrbTotUl = 35976 [PRBs]
+
+     50 KPM ind_msg latency = 1748442089002310 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.84 [kbps]
+DRB.UEThpUl = 10791.23 [kbps]
+RRU.PrbTotDl = 600 [PRBs]
+RRU.PrbTotUl = 36434 [PRBs]
+
+     51 KPM ind_msg latency = 1748442090002455 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.16 [kbps]
+DRB.UEThpUl = 10739.96 [kbps]
+RRU.PrbTotDl = 470 [PRBs]
+RRU.PrbTotUl = 41613 [PRBs]
+
+     52 KPM ind_msg latency = 1748442091002240 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.62 [kbps]
+DRB.UEThpUl = 10714.65 [kbps]
+RRU.PrbTotDl = 560 [PRBs]
+RRU.PrbTotUl = 36556 [PRBs]
+
+     53 KPM ind_msg latency = 1748442092002289 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.38 [kbps]
+DRB.UEThpUl = 10780.97 [kbps]
+RRU.PrbTotDl = 515 [PRBs]
+RRU.PrbTotUl = 37546 [PRBs]
+
+     54 KPM ind_msg latency = 1748442093002367 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10769.62 [kbps]
+RRU.PrbTotDl = 530 [PRBs]
+RRU.PrbTotUl = 39247 [PRBs]
+
+     55 KPM ind_msg latency = 1748442094002437 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.21 [kbps]
+DRB.UEThpUl = 10740.67 [kbps]
+RRU.PrbTotDl = 480 [PRBs]
+RRU.PrbTotUl = 38767 [PRBs]
+
+     56 KPM ind_msg latency = 1748442095002358 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10749.30 [kbps]
+RRU.PrbTotDl = 525 [PRBs]
+RRU.PrbTotUl = 37723 [PRBs]
+
+     57 KPM ind_msg latency = 1748442096002485 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.04 [kbps]
+DRB.UEThpUl = 10748.10 [kbps]
+RRU.PrbTotDl = 445 [PRBs]
+RRU.PrbTotUl = 37395 [PRBs]
+
+     58 KPM ind_msg latency = 1748442097002559 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.82 [kbps]
+DRB.UEThpUl = 10758.93 [kbps]
+RRU.PrbTotDl = 395 [PRBs]
+RRU.PrbTotUl = 41103 [PRBs]
+
+     59 KPM ind_msg latency = 1748442098002367 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.11 [kbps]
+DRB.UEThpUl = 10781.77 [kbps]
+RRU.PrbTotDl = 455 [PRBs]
+RRU.PrbTotUl = 37880 [PRBs]
+
+     60 KPM ind_msg latency = 1748442099002389 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.33 [kbps]
+DRB.UEThpUl = 10721.13 [kbps]
+RRU.PrbTotDl = 505 [PRBs]
+RRU.PrbTotUl = 37569 [PRBs]
+
+     61 KPM ind_msg latency = 1748442100002664 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.35 [kbps]
+DRB.UEThpUl = 10768.70 [kbps]
+RRU.PrbTotDl = 495 [PRBs]
+RRU.PrbTotUl = 37425 [PRBs]
+
+     62 KPM ind_msg latency = 1748442101002318 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.94 [kbps]
+DRB.UEThpUl = 10733.96 [kbps]
+RRU.PrbTotDl = 425 [PRBs]
+RRU.PrbTotUl = 38422 [PRBs]
+
+     63 KPM ind_msg latency = 1748442102002287 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.81 [kbps]
+DRB.UEThpUl = 10755.38 [kbps]
+RRU.PrbTotDl = 605 [PRBs]
+RRU.PrbTotUl = 37363 [PRBs]
+
+     64 KPM ind_msg latency = 1748442103002268 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10641 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10708.34 [kbps]
+RRU.PrbTotDl = 535 [PRBs]
+RRU.PrbTotUl = 36603 [PRBs]
+
+     65 KPM ind_msg latency = 1748442104002629 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.69 [kbps]
+DRB.UEThpUl = 10772.80 [kbps]
+RRU.PrbTotDl = 580 [PRBs]
+RRU.PrbTotUl = 35346 [PRBs]
+
+     66 KPM ind_msg latency = 1748442105002445 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.69 [kbps]
+DRB.UEThpUl = 10750.13 [kbps]
+RRU.PrbTotDl = 575 [PRBs]
+RRU.PrbTotUl = 36412 [PRBs]
+
+     67 KPM ind_msg latency = 1748442106002267 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.42 [kbps]
+DRB.UEThpUl = 10757.94 [kbps]
+RRU.PrbTotDl = 520 [PRBs]
+RRU.PrbTotUl = 38249 [PRBs]
+
+     68 KPM ind_msg latency = 1748442107002376 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.94 [kbps]
+DRB.UEThpUl = 10771.42 [kbps]
+RRU.PrbTotDl = 420 [PRBs]
+RRU.PrbTotUl = 40120 [PRBs]
+
+     69 KPM ind_msg latency = 1748442108002260 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.40 [kbps]
+DRB.UEThpUl = 10732.13 [kbps]
+RRU.PrbTotDl = 520 [PRBs]
+RRU.PrbTotUl = 36444 [PRBs]
+
+     70 KPM ind_msg latency = 1748442109003306 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.35 [kbps]
+DRB.UEThpUl = 10781.93 [kbps]
+RRU.PrbTotDl = 505 [PRBs]
+RRU.PrbTotUl = 38068 [PRBs]
+
+     71 KPM ind_msg latency = 1748442110002602 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.39 [kbps]
+DRB.UEThpUl = 10735.39 [kbps]
+RRU.PrbTotDl = 305 [PRBs]
+RRU.PrbTotUl = 40495 [PRBs]
+
+     72 KPM ind_msg latency = 1748442111002250 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.87 [kbps]
+DRB.UEThpUl = 10758.98 [kbps]
+RRU.PrbTotDl = 410 [PRBs]
+RRU.PrbTotUl = 39443 [PRBs]
+
+     73 KPM ind_msg latency = 1748442112002665 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.27 [kbps]
+DRB.UEThpUl = 10731.07 [kbps]
+RRU.PrbTotDl = 280 [PRBs]
+RRU.PrbTotUl = 44048 [PRBs]
+
+     74 KPM ind_msg latency = 1748442113002403 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10749 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.16 [kbps]
+DRB.UEThpUl = 10811.28 [kbps]
+RRU.PrbTotDl = 465 [PRBs]
+RRU.PrbTotUl = 36241 [PRBs]
+
+     75 KPM ind_msg latency = 1748442114002360 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10617 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.40 [kbps]
+DRB.UEThpUl = 10683.95 [kbps]
+RRU.PrbTotDl = 520 [PRBs]
+RRU.PrbTotUl = 35909 [PRBs]
+
+     76 KPM ind_msg latency = 1748442115002352 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10795.55 [kbps]
+RRU.PrbTotDl = 525 [PRBs]
+RRU.PrbTotUl = 36871 [PRBs]
+
+     77 KPM ind_msg latency = 1748442116002547 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.14 [kbps]
+DRB.UEThpUl = 10780.86 [kbps]
+RRU.PrbTotDl = 465 [PRBs]
+RRU.PrbTotUl = 40405 [PRBs]
+
+     78 KPM ind_msg latency = 1748442117002422 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10629 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.42 [kbps]
+DRB.UEThpUl = 10702.18 [kbps]
+RRU.PrbTotDl = 310 [PRBs]
+RRU.PrbTotUl = 44012 [PRBs]
+
+     79 KPM ind_msg latency = 1748442118002474 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 3.00 [kbps]
+DRB.UEThpUl = 10801.63 [kbps]
+RRU.PrbTotDl = 645 [PRBs]
+RRU.PrbTotUl = 34055 [PRBs]
+
+     80 KPM ind_msg latency = 1748442119002473 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.40 [kbps]
+DRB.UEThpUl = 10758.22 [kbps]
+RRU.PrbTotDl = 515 [PRBs]
+RRU.PrbTotUl = 39182 [PRBs]
+
+     81 KPM ind_msg latency = 1748442120002483 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10629 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.35 [kbps]
+DRB.UEThpUl = 10704.85 [kbps]
+RRU.PrbTotDl = 510 [PRBs]
+RRU.PrbTotUl = 35763 [PRBs]
+
+     82 KPM ind_msg latency = 1748442121002640 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.11 [kbps]
+DRB.UEThpUl = 10796.25 [kbps]
+RRU.PrbTotDl = 455 [PRBs]
+RRU.PrbTotUl = 37310 [PRBs]
+
+     83 KPM ind_msg latency = 1748442122002598 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10745.19 [kbps]
+RRU.PrbTotDl = 530 [PRBs]
+RRU.PrbTotUl = 37715 [PRBs]
+
+     84 KPM ind_msg latency = 1748442123002324 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10665 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.16 [kbps]
+DRB.UEThpUl = 10734.64 [kbps]
+RRU.PrbTotDl = 470 [PRBs]
+RRU.PrbTotUl = 39749 [PRBs]
+
+     85 KPM ind_msg latency = 1748442124002355 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10701 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.45 [kbps]
+DRB.UEThpUl = 10772.08 [kbps]
+RRU.PrbTotDl = 525 [PRBs]
+RRU.PrbTotUl = 35950 [PRBs]
+
+     86 KPM ind_msg latency = 1748442125002186 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10715.90 [kbps]
+RRU.PrbTotDl = 540 [PRBs]
+RRU.PrbTotUl = 35870 [PRBs]
+
+     87 KPM ind_msg latency = 1748442126002558 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.18 [kbps]
+DRB.UEThpUl = 10745.79 [kbps]
+RRU.PrbTotDl = 470 [PRBs]
+RRU.PrbTotUl = 38105 [PRBs]
+
+     88 KPM ind_msg latency = 1748442127002551 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10725 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.81 [kbps]
+DRB.UEThpUl = 10815.91 [kbps]
+RRU.PrbTotDl = 380 [PRBs]
+RRU.PrbTotUl = 42024 [PRBs]
+
+     89 KPM ind_msg latency = 1748442128002366 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10742.40 [kbps]
+RRU.PrbTotDl = 535 [PRBs]
+RRU.PrbTotUl = 34469 [PRBs]
+
+     90 KPM ind_msg latency = 1748442129002458 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10677 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10748.82 [kbps]
+RRU.PrbTotDl = 540 [PRBs]
+RRU.PrbTotUl = 38071 [PRBs]
+
+     91 KPM ind_msg latency = 1748442130002455 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.50 [kbps]
+DRB.UEThpUl = 10747.44 [kbps]
+RRU.PrbTotDl = 535 [PRBs]
+RRU.PrbTotUl = 34643 [PRBs]
+
+     92 KPM ind_msg latency = 1748442131002387 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.94 [kbps]
+DRB.UEThpUl = 10768.04 [kbps]
+RRU.PrbTotDl = 425 [PRBs]
+RRU.PrbTotUl = 38944 [PRBs]
+
+     93 KPM ind_msg latency = 1748442132002244 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10641 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.05 [kbps]
+DRB.UEThpUl = 10703.32 [kbps]
+RRU.PrbTotDl = 415 [PRBs]
+RRU.PrbTotUl = 40782 [PRBs]
+
+     94 KPM ind_msg latency = 1748442133002206 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10689 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.35 [kbps]
+DRB.UEThpUl = 10756.79 [kbps]
+RRU.PrbTotDl = 510 [PRBs]
+RRU.PrbTotUl = 37203 [PRBs]
+
+     95 KPM ind_msg latency = 1748442134002271 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10713 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 1.94 [kbps]
+DRB.UEThpUl = 10783.37 [kbps]
+RRU.PrbTotDl = 420 [PRBs]
+RRU.PrbTotUl = 39598 [PRBs]
+
+     96 KPM ind_msg latency = 1748442135002547 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10653 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.52 [kbps]
+DRB.UEThpUl = 10727.50 [kbps]
+RRU.PrbTotDl = 545 [PRBs]
+RRU.PrbTotUl = 39653 [PRBs]
+
+     97 KPM ind_msg latency = 1748442136002560 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 10737 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 2.11 [kbps]
+DRB.UEThpUl = 10801.17 [kbps]
+RRU.PrbTotDl = 455 [PRBs]
+RRU.PrbTotUl = 39116 [PRBs]
+
+     98 KPM ind_msg latency = 1748442137002226 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 1 [kb]
+DRB.PdcpSduVolumeUL = 10617 [kb]
+DRB.RlcSduDelayDl = 74.00 [μs]
+DRB.UEThpDl = 3.48 [kbps]
+DRB.UEThpUl = 10684.07 [kbps]
+RRU.PrbTotDl = 483 [PRBs]
+RRU.PrbTotUl = 35629 [PRBs]
+
+     99 KPM ind_msg latency = 1748442138002469 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 0 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 0.00 [kbps]
+DRB.UEThpUl = 0.02 [kbps]
+RRU.PrbTotDl = 20 [PRBs]
+RRU.PrbTotUl = 235 [PRBs]
+[xApp]: E42 RIC_SUBSCRIPTION_DELETE_REQUEST tx RAN_FUNC_ID 2 RIC_REQ_ID 1 
+
+    100 KPM ind_msg latency = 1748442139002235 [μs]
+UE ID type = gNB, amf_ue_ngap_id = 1
+ran_ue_id = 1
+DRB.PdcpSduVolumeDL = 0 [kb]
+DRB.PdcpSduVolumeUL = 0 [kb]
+DRB.RlcSduDelayDl = 0.00 [μs]
+DRB.UEThpDl = 0.00 [kbps]
+DRB.UEThpUl = 0.00 [kbps]
+RRU.PrbTotDl = 25 [PRBs]
+RRU.PrbTotUl = 220 [PRBs]
+[xApp]: E42 SUBSCRIPTION DELETE RESPONSE rx
+[xApp]: Sucessfully stopped 
+Test xApp run SUCCESSFULLY
