@@ -321,33 +321,32 @@ class MetricsVisualizer:
             subplot_titles=('Downlink Throughput', 'Uplink Throughput'),
             vertical_spacing=0.1
         )
-        
-        # Downlink throughput
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['UEThpDl'],
-                mode='lines+markers',
-                name='DL Throughput',
-                line=dict(color='blue', width=2),
-                marker=dict(size=6)
-            ),
-            row=1, col=1
-        )
-        
-        # Uplink throughput
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['UEThpUl'],
-                mode='lines+markers',
-                name='UL Throughput',
-                line=dict(color='red', width=2),
-                marker=dict(size=6)
-            ),
-            row=2, col=1
-        )
-        
+
+        for ue_id, group in df.groupby("ue_id"):
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['UEThpDl'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - DL',
+                    line=dict(width=2),
+                    marker=dict(size=6)
+                ),
+                row=1, col=1
+            )
+
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['UEThpUl'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - UL',
+                    line=dict(width=2),
+                    marker=dict(size=6)
+                ),
+                row=2, col=1
+            )
+
         fig.update_xaxes(title_text="Measurement ID", row=2, col=1)
         fig.update_yaxes(title_text="Throughput (kbps)", row=1, col=1)
         fig.update_yaxes(title_text="Throughput (kbps)", row=2, col=1)
@@ -356,129 +355,137 @@ class MetricsVisualizer:
             height=600,
             showlegend=True
         )
-        
+
         return fig
-    
+
     @staticmethod
     def create_volume_plot(df: pd.DataFrame, title: str) -> go.Figure:
-        """Create data volume visualization."""
+        """Create data volume visualization for multiple UEs."""
         fig = go.Figure()
-        
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['PdcpSduVolumeDL'],
-                mode='lines+markers',
-                name='DL Volume',
-                line=dict(color='blue', width=2),
-                marker=dict(size=6)
+
+        for ue_id, group in df.groupby("ue_id"):
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['PdcpSduVolumeDL'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - DL',
+                    line=dict(width=2),
+                    marker=dict(size=6)
+                )
             )
-        )
-        
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['PdcpSduVolumeUL'],
-                mode='lines+markers',
-                name='UL Volume',
-                line=dict(color='red', width=2),
-                marker=dict(size=6)
+
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['PdcpSduVolumeUL'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - UL',
+                    line=dict(width=2, dash='dot'),
+                    marker=dict(size=6)
+                )
             )
-        )
-        
+
         fig.update_layout(
             title=f"{title} - Data Volume (KB)",
             xaxis_title="Measurement ID",
             yaxis_title="Volume (KB)",
-            height=400
+            height=400,
+            showlegend=True
         )
-        
+
         return fig
-    
+
     @staticmethod
     def create_delay_plot(df: pd.DataFrame, title: str) -> go.Figure:
-        """Create RLC delay visualization."""
+        """Create RLC delay visualization for multiple UEs."""
         fig = go.Figure()
-        
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['RlcSduDelayDl'],
-                mode='lines+markers',
-                name='RLC SDU Delay DL',
-                line=dict(color='orange', width=2),
-                marker=dict(size=6)
+
+        for ue_id, group in df.groupby("ue_id"):
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['RlcSduDelayDl'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - RLC Delay DL',
+                    line=dict(width=2),
+                    marker=dict(size=6)
+                )
             )
-        )
-        
+
         fig.update_layout(
             title=f"{title} - RLC SDU Delay",
             xaxis_title="Measurement ID",
             yaxis_title="Delay (μs)",
-            height=400
+            height=400,
+            showlegend=True
         )
-        
+
         return fig
-    
+
     @staticmethod
     def create_prb_plot(df: pd.DataFrame, title: str) -> go.Figure:
-        """Create PRB (Physical Resource Block) utilization visualization."""
+        """Create PRB (Physical Resource Block) utilization visualization for multiple UEs."""
         fig = go.Figure()
-        
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['PrbTotDl'],
-                mode='lines+markers',
-                name='PRB Total DL',
-                line=dict(color='green', width=2),
-                marker=dict(size=6)
+
+        for ue_id, group in df.groupby("ue_id"):
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['PrbTotDl'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - PRB DL',
+                    line=dict(width=2),
+                    marker=dict(size=6)
+                )
             )
-        )
-        
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['PrbTotUl'],
-                mode='lines+markers',
-                name='PRB Total UL',
-                line=dict(color='purple', width=2),
-                marker=dict(size=6)
+
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['PrbTotUl'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - PRB UL',
+                    line=dict(width=2, dash='dot'),
+                    marker=dict(size=6)
+                )
             )
-        )
-        
+
         fig.update_layout(
             title=f"{title} - Physical Resource Blocks",
             xaxis_title="Measurement ID",
             yaxis_title="PRBs",
-            height=400
+            height=400,
+            showlegend=True
         )
-        
+
         return fig
-    
+
     @staticmethod
     def create_latency_plot(df: pd.DataFrame, title: str) -> go.Figure:
-        """Create latency visualization."""
+        """Create latency visualization for multiple UEs."""
         fig = go.Figure()
-        
-        fig.add_trace(
-            go.Scatter(
-                x=df['id'],
-                y=df['latency_delta'],
-                mode='lines+markers',
-                name='KMP Indication Latency',
-                line=dict(color='darkred', width=2),
-                marker=dict(size=6)
+
+        for ue_id, group in df.groupby("ue_id"):
+            fig.add_trace(
+                go.Scatter(
+                    x=group['id'],
+                    y=group['latency_delta'],
+                    mode='lines+markers',
+                    name=f'{ue_id} - Latency',
+                    line=dict(width=2),
+                    marker=dict(size=6)
+                )
             )
-        )
-        
+
         fig.update_layout(
             title=f"{title} - KMP Indication Latency",
             xaxis_title="Measurement ID",
             yaxis_title="Latency (μs)",
-            height=400
+            height=400,
+            showlegend=True
         )
-        
+
         return fig
 
 def real_time_tab():
@@ -672,7 +679,7 @@ def non_real_time_tab():
                     
                     # Process the file
                     df = processor.process_file(file_content, uploaded_file.name)
-                    
+                    df['latency_delta'] = df['latency'].diff()
                     if df is not None and not df.empty:
                         st.session_state.processed_data[uploaded_file.name] = df
                         st.sidebar.success(f"✅ {uploaded_file.name}")
