@@ -646,15 +646,18 @@ def non_real_time_tab():
                 st.caption(f"Analysis for file: `{filename}`")
                 
                 # Show basic statistics
-                col1, col2, col3, col4 = st.columns(4)
-                with col1:
-                    st.metric("Total Measurements", len(df))
-                with col2:
-                    st.metric("Avg DL Throughput", f"{df['UEThpDl'].mean():.2f} kbps")
-                with col3:
-                    st.metric("Avg UL Throughput", f"{df['UEThpUl'].mean():.2f} kbps")
-                with col4:
-                    st.metric("Avg RLC Delay", f"{df['RlcSduDelayDl'].mean():.2f} μs")
+                ue_ids = df['ue_id'].unique() if 'ue_id' in df.columns else ['Unknown UE']
+                num_ues = len(ue_ids)
+                cols = st.columns(min(4, num_ues))  # Max 4 side-by-side
+
+                for idx, ue_id in enumerate(ue_ids):
+                    df_ue = df[df['ue_id'] == ue_id]
+                    with cols[idx % len(cols)]:
+                        st.markdown(f"**UE {ue_id}**")
+                        st.metric("Measurements", len(df_ue))
+                        st.metric("Avg DL Thp", f"{df_ue['UEThpDl'].mean():.2f} kbps")
+                        st.metric("Avg UL Thp", f"{df_ue['UEThpUl'].mean():.2f} kbps")
+                        st.metric("Avg RLC Delay", f"{df_ue['RlcSduDelayDl'].mean():.2f} μs")
                 
                 # Create visualizations
                 st.plotly_chart(

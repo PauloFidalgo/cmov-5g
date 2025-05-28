@@ -2,6 +2,8 @@
 
 A Python web application for visualizing 5G core network metrics from log files.
 
+![alt text](image.png)
+
 ## Features
 
 - **Multi-file Support**: Upload and analyze multiple log files simultaneously
